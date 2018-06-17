@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstValEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter first value"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <EditText
+        android:id="@+id/secondValEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter second value"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/firstValEditText"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Add"
+        app:layout_constraintTop_toBottomOf="@+id/secondValEditText"
+        tools:layout_editor_absoluteX="87dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="52dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:text="Result"
+        app:layout_constraintTop_toBottomOf="@+id/addBtn"
+        tools:layout_editor_absoluteX="93dp" />
+
+    <EditText
+        android:id="@+id/inputXvalueEditText"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter x value"
+        android:inputType="text|number"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/outputXtextView"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="X value"
+        app:layout_constraintTop_toBottomOf="@+id/showXBtn"
+        tools:layout_editor_absoluteX="78dp" />
+
+    <Button
+        android:id="@+id/showXBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Show X"
+        app:layout_constraintTop_toBottomOf="@+id/inputXvalueEditText"
+        tools:layout_editor_absoluteX="81dp" />
+
+</android.support.constraint.ConstraintLayout>
